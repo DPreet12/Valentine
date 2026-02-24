@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <title>Valentine</title>
+</head>
+<body>
+    <img src = "pictures/flower-1.jpg" class="corner top-left" alt="flower">
+    <img src = "pictures/flower-2.jpg" class="corner top-right" alt="flower">
+    <img src = "pictures/flower-3.jpg" class="corner bottom-left" alt="flower">
+    <img src = "pictures/flower-4.jpg" class="corner bottom-right" alt="flower">
+
+    <div class="container">
+        <h1>Will you be my valentine?</h1>
+        <div class="button-container">
+            <button id="yesBtn" class="buttons">YES</button>
+            <button id="noBtn" class="buttons">No</button>
+        </div>
+        <div id="loveMessage" class="hidden">
+            <h2>Yay! I love you too!</h2>
+            <div class="love-pics-grid">
+                <img src="pictures/Picture-of-us-1.jpeg" alt="Us together">
+                <img src="pictures/Picture-of-us-2.jpeg" alt="Us together">
+                <img src="pictures/Picture-of-us-3.jpeg" alt="Us together">
+                <img src="pictures/Picture-of-us-4.jpeg" alt="Us together">
+            </div>
+            
+        </div>
+    </div>
+    <script src = "app.js"></script>
+</body>
+</html>

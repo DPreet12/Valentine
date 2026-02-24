@@ -1,0 +1,120 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #ffccd9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    border: solid black;
+}
+
+.container {
+     margin-bottom: 20vh;
+}
+
+
+.container h1 {
+    font-family: 'Great Vibes', 'Dancing Script', cursive;
+    font-size: 7em;
+    text-shadow: 2px 2px 5px rgba(255,0,100,0.3); /* soft glow */
+}
+
+.button-container .buttons{
+    font-size: 2.3em;
+    font-family: 'Pacifico', cursive;
+    padding: 10px 20px;
+    margin: 10px; 
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    transform: scale(1) translate(0, 0);
+    transition: transform 0.3s ease-out background-color 0.3s; 
+}
+
+#yesBtn{
+    background-color: #ff4d6d;
+    color: white;
+    transform-origin: top-left;
+}
+
+#noBtn {
+    background-color: #aaa;
+    color: white;
+    /* position: absolute; */    
+}
+
+.hidden{
+    display: none;
+}
+
+.corner {
+    position: fixed;
+    width: 25vh;
+    height: 25vh;
+    margin: 20px;
+    z-index: 0;
+    /* opacity: 0.8; */
+    transition: transform 5s linear;
+}
+
+.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg);}
+    50% {transform: translateY(-10px) rotate(10deg);}
+    100% { transform: translateY(0px) rotate(0deg);}
+}
+
+
+.corner {
+    animation: float 6s infinite ease-in-out;
+}
+
+.love-pics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.love-pics-grid img{
+    border-radius: 20px;
+    width: 25vh;
+    height: 30vh;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.love-pics-grid img:hover {
+    transform: scale(1.1);
+}
+
+#loveMessage h2 {
+    font-family: 'Great Vibes', 'Dancing Script', cursive;
+    font-size: 5em;
+    text-shadow: 2px 2px 5px rgba(255,0,100,0.3); 
+}
